@@ -14,3 +14,18 @@ arr=list(map(int,input().split()))
 k=int(input())
 left_rotate(arr,k)
 print(arr)
+2]**harshad number**
+def harshad(num):
+    temp=num
+    sum=0
+    while(temp>=1):
+        b=temp%10
+        sum+=b 
+        temp//=10
+    if (num%sum)==0:
+        return True
+    else:
+        return False
+num=int(input("enter the number "))
+
+print(harshad(num))
