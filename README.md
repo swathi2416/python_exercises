@@ -29,3 +29,18 @@ def harshad(num):
 num=int(input("enter the number "))
 
 print(harshad(num))
+3]**reverse the vowels in string**
+
+s=input()
+vowels="a,e,i,o,u,A,E,I,O,U"
+s=list(s)
+vowels_list=[char for char in s if char in vowels ]
+vowels_list.reverse()
+j=0
+for i in range(len(s)):
+    if s[i] in vowels:
+       s[i]=vowels_list[j]
+       j+=1
+    else:
+        s[i]=s[i]
+print("".join(s))
